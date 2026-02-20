@@ -1,27 +1,31 @@
 Online Payments Fraud Detection using Machine Learning
-📌 Overview
+📌 Project Description
 
-This project detects fraudulent online payment transactions using a Random Forest classifier integrated with a Flask web application.
+This project focuses on detecting fraudulent online payment transactions using Machine Learning techniques. It analyzes transaction details such as amount, balance changes, and transaction type to predict whether a transaction is legitimate or fraudulent.
 
-🚀 Features
+A Random Forest classifier is trained on historical transaction data and integrated into a Flask web application for real-time fraud prediction.
 
-Data preprocessing
+The goal of this project is to reduce financial loss, improve transaction security, and demonstrate the practical implementation of machine learning in fraud detection systems.
 
-Imbalanced dataset handling
+🚀 Key Highlights
 
-Random Forest classification
+Data preprocessing and feature engineering
 
-Fraud probability threshold tuning
+Handling imbalanced datasets
 
-Flask web interface for prediction
+Random Forest model training and evaluation
+
+High accuracy fraud detection (~99%)
+
+Flask-based web interface for real-time prediction
+
+Model saved using pickle for deployment
 
 🛠️ Technologies Used
 
 Python
 
-Pandas
-
-NumPy
+Pandas & NumPy
 
 Scikit-learn
 
@@ -29,15 +33,20 @@ Flask
 
 HTML
 
-📊 Model Performance
+This project demonstrates how machine learning can be applied to real-world financial security problems in a simple and practical way.
+▶️ How to Run
 
-Model Accuracy: ~99%
+Train model:
 
-🖥️ Application Screenshots
+python train_model.py
 
-Fraud Detection – Legitimate Transaction
-(Add your screenshot here)
-How to Run
-pip install -r requirements.txt
+Move payments.pkl to flask folder
+
+Run Flask app:
+
 cd flask
 python app.py
+
+Open:
+
+http://127.0.0.1:5000/
